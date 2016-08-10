@@ -55,7 +55,7 @@ $(document).ready(function(){
    if(cardNumber == "question question-21 "){
        $(".result-100").show();
        totalScore = totalScore + parseInt(dataScore);
-       submitDetail = submitDetail + shortDesc + "_" + totalScore;
+       submitDetail = submitDetail + shortDesc + "/" + totalScore;
        var output = document.getElementById('output');
        var outputTitle = document.getElementById('output-title');
        outputTitle.innerHTML = totalScore;
@@ -78,7 +78,7 @@ $(document).ready(function(){
         output.innerHTML = "This is outright impossible. <br>I know it's a long quiz (20 questions in total) and thanks for your wonderful efforts. <br>But out of 100, you got zero marks...? <br>It takes skill and an incredible amount of luck (or lack of luck) to guess every single question incorrectly. <br>Kudos to you just for that. Take a screenshot of this page and send it to me. I'll send you a red packet.<br>Seriously - send me a screenshot and let's be friends. <br>Cheers, <br>Kay";
       }
    } else {
-       submitDetail = submitDetail + shortDesc + "_";
+       submitDetail = submitDetail + shortDesc + "/";
        totalScore = totalScore + parseInt(dataScore);
        $(next_node).show();
    }
